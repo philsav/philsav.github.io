@@ -20,13 +20,11 @@
             padding-top: 50px;
             padding-bottom: 20px;
         }
-
     </style>
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="css/lightbox.css">
     <link rel="stylesheet" href="css/main.css">
 
-    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700|Roboto:300,400,500,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,700,900" rel="stylesheet">
 
 
 
@@ -38,81 +36,79 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-    <div class="container wrapper">
-        <a href="index.html" class="logo">
-            <h1>Philip Savarirayan</h1>
-        </a>
-        <div class="col-sm-12 nav">
-
-            <nav class="navigation">
-                <p align="center" class="toggleNav">
-                    <a href="index.html"><img src="img/menu.png" alt="" width="15px" style="margin-right: 5px;">Menu</a>
-                </p>
-                <ul>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="snippets.html">Snippets</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-
-            </nav>
+    <header class="cd-header">
+        <div class="cd-logo">
+            <!-- ... -->
         </div>
 
-        <section class="portfolio">
 
-            <div class="col-xs-6 col-sm-4">
-                <a href="img/1.jpg" data-lightbox="roadtrip"><img class="a-fade-in border" src="img/1thumb.jpg" alt="">
-                </a>
+        <a class="cd-primary-nav-trigger" href="#0">
+            <span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span>
+        </a>
+        <!-- cd-primary-nav-trigger -->
+    </header>
+
+    <nav>
+        <ul class="cd-primary-nav">
+            <li><a href="#0">Snippets</a></li>
+            <li><a href="#0">Our services</a></li>
+            <li><a href="#0">Our projects</a></li>
+            <li>
+                <!-- ... -->
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- content -->
+
+        <div class="container wrapper">
+
+            <div class="row main-content">
+                <div class="col-sm-12">
+                    <h2>Welcome to Philip Savarirayans Website</h2>
+                </div>
+
+                <div class="col-sm-4">
+                    <p><img class="img" src="img/phil.png" alt=""></p>
+                </div>
+
+                <div class="col-sm-8">
+                    <section class="about">
+                        <p>Hello My name is Philip, and im a Certified Web and graphic designer. I help startups and new business owners brand their company and establish a web presence. My focus is in front end Web Design with UI/UX design.</p>
+                        <p>If your looking for a front end web developer who designs for all platforms with progressive enhancement and gracecful degrdation.</p>
+                        <p>You can view some of my work here and by browsing through the site.</p>
+                    </section>
+                </div>
             </div>
-            <div class="col-xs-6 col-sm-4">
-                <a href="img/2.jpg" data-lightbox="roadtrip"><img class="a-fade-in border" src="img/2thumb.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-xs-6 col-sm-4">
-                <a href="img/3.jpg" data-lightbox="roadtrip"><img class="a-fade-in border" src="img/3thumb.jpg" alt="">
-                </a>
-            </div>
+
+        </div>
 
 
-            <div class="col-xs-6 col-sm-4">
-                <a href="img/4.jpg" data-lightbox="roadtrip" title="fieldtrac"><img class="a-fade-in border" src="img/4thumb.jpg" alt="fieldtrac">
-                </a>
-            </div>
-            <div class="col-xs-6 col-sm-4">
-                <a href="img/5.jpg" data-lightbox="roadtrip"><img class="a-fade-in border" src="img/5thumb.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-xs-6 col-sm-4">
-                <a href="img/6.jpg" data-lightbox="roadtrip"><img class="a-fade-in border" src="img/6thumb.jpg" alt="">
-                </a>
-            </div>
+        <div class="row footer">
 
-        </section>
-
-        <section class="contact">
-            <div class="col-sm-12">
-                <h2>Contact:</h2>
-                <p align="center">
-                    <span class="span-foot">  <i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>
-
- +201-468-8971 (USA) </span>| <span class="span-foot"> Whatsapp: +91 735-829-4647 </span> | <span class="span-foot"><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i>
- philip.sav@gmail.com</span>
-                    <br/><br/>
-                    <a href="https://www.linkedin.com/in/philip-sav/"><img src="img/linkedin.jpg" alt=""></a>
-            </div>
-        </section>
+            <h2>Contact</h2>
+                <p> <i class="glyphicon glyphicon-earphone" aria-hidden="true"></i> +201-468-8971 (USA) | Whatsapp: +91 735-829-4647 | <i class="glyphicon glyphicon-envelope" aria-hidden="true"></i> philip.sav@gmail.com
+                </p>
 
 
-    </div>
+                <p class="social">
+                    <a href="https://www.linkedin.com/in/philip-sav/"><img src="img/linkedin.png" alt=""></a>
+
+                    <a href="https://www.instagram.com/"><img src="img/instagram.png" alt=""></a>
+                </p>
+
+                <p class="copyright" align="center">&copy 2017 Copyright Philip Savarirayan. All Rights Reserved</p>
+        </div>
+
+    </main>
     <!-- /container -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>
         window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
-
     </script>
 
     <script src="js/vendor/bootstrap.min.js"></script>
-    <script src="js/vendor/lightbox.js"></script>
 
     <script src="js/main.js"></script>
 
@@ -132,7 +128,6 @@
         }(window, document, 'script', 'ga'));
         ga('create', 'UA-XXXXX-X', 'auto');
         ga('send', 'pageview');
-
     </script>
 
 </body>
