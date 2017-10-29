@@ -370,7 +370,7 @@ strong{
   top: 0;
   height: 100%;
   width: 50px;
-  background-color: #03263d;
+  background-color: #0c202e;
 }
 .cd-primary-nav-trigger .cd-menu-text {
   color: white;
@@ -664,7 +664,7 @@ a img {
     will-change: transform;
 }
 
-.logo {
+.logo img{
     text-align: center;
     margin: auto;
     display: block;
