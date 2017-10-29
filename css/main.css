@@ -228,15 +228,18 @@ strong{
 }
 
 
+.footer-logo{
+    margin: auto;
+    padding: 0 0 15px;
+}
 .footer-logo img{
     width: 350px;
-    padding: 15px 0 15px;
 }
 .about{
     padding: 0 15px;
 }
 .copyright{
-    padding:0 0 30px;
+    padding:15px 0 30px;
     font-size:14px;
     color:red!important;
 }
@@ -249,7 +252,7 @@ strong{
 }
 
 .social {
-    margin: 30px 0 30px;
+    margin: 45px 0 30px;
 }
 .social a:hover{
     opacity:0.8;
@@ -803,7 +806,8 @@ margin-top: 60px;
     line-height: 50px;
     margin: -5px auto auto;
     position: absolute;
-    right: 60px;
+    right: 0;
+    left: 0;
     transition: all 0.2s linear 0s;
     width: 50px;
     border:none;
