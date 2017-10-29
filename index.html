@@ -21,6 +21,12 @@
             padding-bottom: 20px;
         }
     </style>
+    
+        <link rel="stylesheet" href="css/animations.css">
+                <link rel="stylesheet" href="css/animations-ie-fix.css">
+
+
+    
     <link rel="stylesheet" href="css/main.css">
 
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,700,900" rel="stylesheet">
@@ -67,12 +73,12 @@
             <div class="row main-content">
 
 
-                <div class="col-sm-4">
-                    <p><img class="img" src="img/phil.png" alt=""></p>
+                <div class="col-sm-4 animatedParent">
+                    <p><img class="img animated fadeInUpShort" src="img/phil.png" alt=""></p>
                 </div>
 
-                <div class="col-sm-8">
-                    <section class="about">
+                <div class="col-sm-8 animatedParent">
+                    <section class="about animated  fadeInUpShort">
                         <p>Hello My name is Philip, and im a <strong>certified web and graphic designer</strong>. I help startups and new business owners brand their company and establish a web presence. My focus is in <strong>front end Web Design with UI/UX design.</strong></p>
                         <p>If your looking for a front end web developer who designs for all platforms with progressive enhancement and gracecful degrdation.</p>
 
@@ -87,25 +93,25 @@
 
             <h3>My Skills & Expertise:</h3>
 
-            <div class="col-sm-4 col-sm-push-2">
+            <div class="col-sm-4 col-sm-push-2 animatedParent">
 
-                <img class="img design" src="img/monitorw.png" alt="">
+                <img class="img design animated fadeInUpShort" src="img/monitorw.png" alt="">
 
-                <ul>
-                    <li> UI/UX Design</li>
-                    <li>Web & Interactive Design</li>
-                    <li>Branding / Logo Design</li>
+                <ul class="animatedParent">
+                    <li class="animated fadeInUpShort" data-id='1'> UI/UX Design</li>
+                    <li class="animated fadeInUpShort" data-id='2'>Web & Interactive Design</li>
+                    <li class="animated fadeInUpShort" data-id='3'>Branding / Logo Design</li>
                 </ul><br/><br/>
             </div>
 
-            <div class="col-sm-4 col-sm-push-2">
+            <div class="col-sm-4 col-sm-push-2 animatedParent">
 
-                <img class="img code" src="img/contentw.png" alt="">
+                <img class="img code animated fadeInUpShort" src="img/contentw.png" alt="">
 
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS with SASS</li>
-                    <li>Javascript with Jquery</li>
+                <ul class="animatedParent">
+                    <li class="animated fadeInUpShort" data-id='1'>HTML</li>
+                    <li class="animated fadeInUpShort" data-id='2'>CSS with SASS</li>
+                    <li class="animated fadeInUpShort" data-id='3'>Javascript with Jquery</li>
                 </ul><br/><br/>
             </div>
         </div>
@@ -116,14 +122,14 @@
         <div class="row footer">
             <div class="info">
 
-                <div class="contact-info">
-                    <div class="col-sm-4"><a href="tel:+12014688971"><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i> <br/>+1 201-468-8971 </a></div>
+                <div class="contact-info animatedParent" data-sequence='500'>
+                    <div class="col-sm-4 animated fadeInUpShort" data-id='1'><a href="tel:+12014688971"><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i> <br/>+1 201-468-8971 </a></div>
 
-                    <div class="col-sm-4">
+                    <div class="col-sm-4 animated fadeInUpShort" data-id=2>
                         <a href="tel:+917358294647"> <i class="glyphicon glyphicon glyphicon-globe" aria-hidden="true"></i><br/>+91 735-829-4647 </a>
                     </div>
 
-                    <div class="col-sm-4"><a href="mailto:philip.sav@gmail.com"><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><br/> philip.sav@gmail.com</a></div>
+                    <div class="col-sm-4 animated fadeInUpShort" data-id='3'><a href="mailto:philip.sav@gmail.com"><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><br/> philip.sav@gmail.com</a></div>
                 </div>
 
                 <div class="clearfix"></div>
@@ -136,7 +142,7 @@
 
                 <div class="clearfix"></div>
 
-                <div class="col-sm-12 footer-logo"> <img class=" img" src="img/logo1b.png" alt=""></div>
+                <div class="col-sm-12 footer-logo" class="animatedParent"> <img class="img animated fadeInUpShort" src="img/logo1b.png" alt=""></div>
 
                 <div class="copyright" align="center">&copy 2017 Copyright Philip Savarirayan. All Rights Reserved</div>
 
@@ -153,6 +159,9 @@
     <script src="js/vendor/bootstrap.min.js"></script>
 
     <script src="js/headroom.js"></script>
+    
+        <script src="js/css3-animate-it.js"></script>
+
 
     <script src="js/main.js"></script>
 
@@ -166,22 +175,16 @@
     </script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-        (function(b, o, i, l, e, r) {
-            b.GoogleAnalyticsObject = l;
-            b[l] || (b[l] =
-                function() {
-                    (b[l].q = b[l].q || []).push(arguments)
-                });
-            b[l].l = +new Date;
-            e = o.createElement(i);
-            r = o.getElementsByTagName(i)[0];
-            e.src = '//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e, r)
-        }(window, document, 'script', 'ga'));
-        ga('create', 'UA-XXXXX-X', 'auto');
-        ga('send', 'pageview');
-    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-83318506-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-83318506-3');
+</script>
+
 
 </body>
 </html>
