@@ -36,7 +36,8 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-    <header class="cd-header">
+    
+          <header  class="cd-header headroom">
       
 <div class="col-sm-12">
                    <p align="center"><a href="index.html"><img class="img" src="img/logo1b.png" alt=""></a></p>
@@ -51,8 +52,8 @@
     <nav>
         <ul class="cd-primary-nav">
             <li><a href="snippets.html">Snippets</a></li>
-            <li><a href="#0">Case Studies</a></li>
-            <li><a href="#0">Hire Me</a></li>
+            <li><a href="casestudies.html">Case Studies</a></li>
+            <li><a href="contact.html">Hire Me</a></li>
             <li>
                 <!-- ... -->
             </li>
@@ -79,7 +80,7 @@
                     </ul>
                 </div>
 
-                <div class="content col-sm-9">
+                <div id="jp-container" class="content col-sm-9 jp-container">
                     <div class="section active" id="html">
                        
                        <p><a href="https://speckyboy.com/free-web-design-ebooks/">free-web-design-ebooks</a></p>
@@ -303,7 +304,7 @@
                         <p><a href="https://afarkas.github.io/lazysizes/">lazysizes</a></p>
                         <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration">Learning javascript loops and iteration</a></p>
 
-                        <p><a href="https://stackoverflow.com/questions/9122078/difference-between-onclick-vs-click">ifference-between-onclick-vs-click</a></p>
+                        <p><a href="https://stackoverflow.com/questions/9122078/difference-between-onclick-vs-click">difference-between-onclick-vs-click</a></p>
 
 
                         <p><a href="https://stackoverflow.com/questions/28674102/using-for-loop-to-find-specific-characters-in-string">Using a loop to find specific characters in a string</a></p>
@@ -608,21 +609,36 @@
             </div>
         </div>
 
+                   <div class="back-top">
+             <a href="#back-top" title="Back To Top"><i class="glyphicon glyphicon-chevron-up
+" aria-hidden="true"></i></a></div>
 
-            <div class="row footer">
-            <div class="col-sm-12">
-            <h2>Contact</h2>
-                <p class="info"> <i class="glyphicon glyphicon-earphone" aria-hidden="true"></i> +201-468-8971 (USA) &nbsp | &nbsp Whatsapp: +91 735-829-4647 &nbsp | &nbsp <i class="glyphicon glyphicon-envelope" aria-hidden="true"></i> philip.sav@gmail.com
-                </p>
+              <div class="row footer">
+            <div class="info">
+                
+                 
 
-
-                <p class="social">
+                <div class="contact-info"><div class="col-sm-4"><a href="tel:+12014688971"><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i> <br/>+1 201-468-8971 </a></div>
+                
+                 <div class="col-sm-4"><a href="tel:+917358294647"> <i class="glyphicon glyphicon glyphicon-globe" aria-hidden="true"></i><br/>+91 735-829-4647 </a></div>
+               
+                <div class="col-sm-4"><a href="mailto:philip.sav@gmail.com"><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><br/> philip.sav@gmail.com</a></div></div>
+               
+                <div class="clearfix"></div>
+               
+                <div class="social">
                     <a href="https://www.linkedin.com/in/philip-sav/"><img src="img/linkedin.png" alt=""></a>&nbsp &nbsp &nbsp 
 
                     <a href="https://www.instagram.com/"><img src="img/instagram.png" alt=""></a>
-                </p>
+                </div>
+                
+                <div class="clearfix"></div>
+                
+                               <div class="col-sm-12 footer-logo"> <img class=" img" src="img/logo1b.png" alt=""></div>
 
-                <p class="copyright" align="center">&copy 2017 Copyright Philip Savarirayan. All Rights Reserved</p>
+
+                <div class="copyright" align="center">&copy 2017 Copyright Philip Savarirayan. All Rights Reserved</div>
+                
         </div></div>
         <!-- /container -->
     </main>
@@ -632,10 +648,21 @@
     </script>
 
     <script src="js/vendor/bootstrap.min.js"></script>
-    <script src="js/vendor/lightbox.js"></script>
+    
+      <script src="js/headroom.js"></script>
 
+  
     <script src="js/main.js"></script>
-
+    
+    <script>
+// grab an element
+var myElement = document.querySelector("header");
+// construct an instance of Headroom, passing the element
+var headroom  = new Headroom(myElement);
+// initialise
+headroom.init(); 
+    </script>
+    
     <script>
         $(function() {
             //togglenav
@@ -664,6 +691,13 @@
 
         });
     </script>
+    
+    <script>
+    //make external links open in blank
+var root = location.protocol + '//' + location.host;$('.content a').not(':contains(root)').click(function(){ this.target = "_blank";});
+
+    </script>
+   
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
