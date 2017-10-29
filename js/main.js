@@ -45,3 +45,16 @@ jQuery(document).ready(function($){
 		}
 	});
 });
+
+//back to top
+
+$(function(){
+$("a[href='#back-top']").click(function() {
+  $("html, body").animate({ scrollTop: 0 }, "slow");
+  return false;
+});
+    });
+
+//make external links open in blank
+var root = location.protocol + '//' + location.host;$('a').not(':contains(root)').click(function(){ this.target = "_blank";});
+
