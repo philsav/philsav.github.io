@@ -29,7 +29,9 @@ jQuery(document).ready(function($){
 	}
 
 	//open/close primary navigation
-	$('.cd-primary-nav-trigger').on('click', function(){
+	$('.cd-primary-nav-trigger').on('click', function(event){
+          event.preventDefault();
+
 		$('.cd-menu-icon').toggleClass('is-clicked'); 
 		$('.cd-header').toggleClass('menu-is-open');
 		
@@ -55,6 +57,4 @@ $("a[href='#back-top']").click(function() {
 });
     });
 
-//make external links open in blank
-var root = location.protocol + '//' + location.host;$('a').not(':contains(root)').click(function(){ this.target = "_blank";});
 
