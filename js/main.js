@@ -57,6 +57,4 @@ $("a[href='#back-top']").click(function() {
 });
     });
 
-//make external links open in blank
-var root = location.protocol + '//' + location.host;$('a').not(':contains(root)').click(function(){ this.target = "_blank";});
 
