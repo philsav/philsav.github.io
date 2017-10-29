@@ -163,7 +163,7 @@ h2 {
 font-size: calc(2em + .2vw);
 font-weight: 700;
     line-height: 1.3;
-    padding:0em 0 .35em;
+    padding:0em;
 }
 h3{
     font-weight: 700;
@@ -197,20 +197,36 @@ strong{
 .info,{
     padding: 60px 30px 15px;
 }
+.contact-form{
+        padding-top: 30px;
+
+}
 .contact{
     padding-left: 30px!important;
+    padding-top: 30px !important;;
 }
-.contact-info i{
-    padding: 30px 0 15px;
+@media all and (max-width:767px){
+    .contact{
+    padding-top:60px !important;;
 }
-.contact p, .contact a{
+}
+.contact p{
     color: #000;
     font-weight: 400;
     text-transform: none;
 }
-.contact strong{
-    background: transparent;
+.contact a{
+    color: #000;
+    font-weight: 500;
+        text-transform: none;
 }
+.contact i{
+    color: #af1a1c;
+}
+.contact-info i{
+    padding: 30px 0 15px;
+}
+
 
 .footer-logo img{
     width: 350px;
@@ -480,6 +496,7 @@ strong{
 }
 .no-touch .cd-primary-nav a:hover, .cd-primary-nav a:hover {
   background-color: red;
+        font-weight: 500;
 }
 .cd-primary-nav .cd-label {
   color: #06446e;
@@ -823,7 +840,15 @@ background:yellow;
     color:red;
 }
 
-
+.btn-primary {
+    color: #fff;
+    background-color: #d8182b;
+    border:none;
+    width: 100%;
+}
+.btn-primary:hover {
+    background-color: #0c202e;
+}
 @media all and (max-width:767px) {
     .tabs li{
         display: inline;
