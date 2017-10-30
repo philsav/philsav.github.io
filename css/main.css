@@ -820,12 +820,32 @@ margin-top: 60px;
 .desc{
     padding-left: 30px;
 }
+.desc-right{
+    padding-right: 30px;
+}
 .row.network-studio {
     border: 5px solid #c12525;
     padding: 30px;
     margin: 30px 15px;
     background: #fff;
 }
+
+@media all and (max-width:767px){
+  .desc{
+    padding-left: 0px;
+}
+.desc-right{
+    padding-right: 0px;
+
+    }  
+    .row.network-studio {   
+    padding: 15px;
+    margin: 30px 5px;
+  
+}
+}
+
+
 .row.network-studio h2{
     padding: 0 0 30px;
 }
