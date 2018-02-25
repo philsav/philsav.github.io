@@ -670,7 +670,7 @@ a img {
     display: block;
     padding-bottom: 30px;
     border: none!important;
-     max-width: 100%
+     max-width: 100%;
         height: auto;
 }
 
@@ -837,11 +837,11 @@ margin-top: 60px;
 .desc-right{
     padding-right: 0px;
 
-    }  
-    .row.network-studio {   
+    }
+    .row.network-studio {
     padding: 15px;
     margin: 30px 5px;
-  
+
 }
 }
 
@@ -881,15 +881,15 @@ background:yellow;
         display: inline;
     }
     .content::after {
-   
+
     bottom: 0px;
-   
+
     }
 }
 
 
 @media all and (max-width:420px) {
-  
+
     .wrapper {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -899,13 +899,13 @@ background:yellow;
         -ms-flex-flow: column wrap;
         flex-flow: column wrap;
     }
-    
+
     .wrapper>* {
         -webkit-box-ordinal-group: 10000;
         -ms-flex-order: 9999;
         order: 9999;
     }
-    
+
       .cd-primary-nav {
         padding: 160px 0;
       }

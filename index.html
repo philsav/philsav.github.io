@@ -12,8 +12,23 @@
     <title>Philip Savarirayan</title>
     <meta name="description" content="">
    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0"/>
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
+<link rel="apple-touch-icon" sizes="57x57" href="img/icons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="img/icons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/icons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="img/icons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/icons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="img/icons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="img/icons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="img/icons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="img/icons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="img/icons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon-16x16.png">
+<link rel="manifest" href="img/icons/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <style>
         body {
@@ -21,15 +36,30 @@
             padding-bottom: 20px;
         }
     </style>
-    
 
 
-    
+
+
     <link rel="stylesheet" href="css/main.css">
 
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,700,900" rel="stylesheet">
 
-
+    <script>
+    window['_fs_debug'] = false;
+    window['_fs_host'] = 'fullstory.com';
+    window['_fs_org'] = 'APTF0';
+    window['_fs_namespace'] = 'FS';
+    (function(m,n,e,t,l,o,g,y){
+        if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
+        g=m[e]=function(a,b){g.q?g.q.push([a,b]):g._api(a,b);};g.q=[];
+        o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
+        y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+        g.identify=function(i,v){g(l,{uid:i});if(v)g(l,v)};g.setUserVars=function(v){g(l,v)};
+        y="rec";g.shutdown=function(i,v){g(y,!1)};g.restart=function(i,v){g(y,!0)};
+        g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+        g.clearUserCookie=function(){};
+    })(window,document,window['_fs_namespace'],'script','user');
+    </script>
 
 </head>
 
@@ -42,7 +72,7 @@
 
         <div class="col-sm-6 col-sm-push-3 logo">
                 <a href="index.html"><img class="img" src="img/logo1b.png" alt=""></a>
-       
+
         </div>
 
         <a class="cd-primary-nav-trigger" href="#0">
@@ -66,8 +96,8 @@
     </nav>
 
     <main>
-       
-      
+
+
         <!-- content -->
 
         <div class="container wrapper">
@@ -145,7 +175,7 @@
                 <div class="clearfix"></div>
 
                 <div class="col-sm-12 footer-logo"> <img class="img" src="img/logo1b.png" alt=""></div>
-                
+
                 <div class="clearfix"></div>
 
                 <div class="copyright" align="center">&copy 2017 Copyright Philip Savarirayan. All Rights Reserved</div>
@@ -163,7 +193,7 @@
     <script src="js/vendor/bootstrap.min.js"></script>
 
     <script src="js/headroom.js"></script>
-    
+
 
     <script src="js/main.js"></script>
 
