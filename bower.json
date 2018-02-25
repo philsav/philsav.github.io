@@ -1,0 +1,17 @@
+{
+  "name": "philsav.github.io",
+  "description": "Portfolio website",
+  "main": "index.js",
+  "authors": [
+    "Philip Savarirayan <philip.sav@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/philsav/philsav.github.io",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
